@@ -11,7 +11,7 @@ const Moneyow = () => {
         <Sidebar />
       </div>
       <div className="dashboardContainer">
-        <Navbar />
+        <Navbar /> 
 
         <div className="dividend-abs-page">
             <div className="dabs-inner" style={{ background: "white", margin: "0px 24% 0% 3%", padding: "6px 42px", borderRadius: "10px" }}>
