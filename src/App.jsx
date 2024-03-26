@@ -169,7 +169,7 @@ function App() {
             <Route path='/category' element={<ProtectedRoute children={<Category/>} />} />
             <Route path='/invoices' element={<ProtectedRoute children={<Invoice/>} />} />
             <Route path='/dividend-ab' element={<ProtectedRoute children={<DividendAb/>} />} />
-            <Route path='/money-owed' element={<ProtectedRoute children={<Moneyow />} />} />
+            {/* <Route path='/money-owed' element={<ProtectedRoute children={<Moneyow />} />} /> */}
             <Route path='/money-business-owed' element={<ProtectedRoute children={<MBO />} />} />
             <Route path='/personal-tax' element={<ProtectedRoute children={<PersonaltacR />} />} />
             {/* <Route path='/pricing-plans' element={<ProtectedRoute children={<Pricingplan />} />} /> */}
