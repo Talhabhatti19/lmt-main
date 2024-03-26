@@ -58,7 +58,7 @@ import Category from "./pages/Category/Category";
 import Invoice from "./pages/Invoice/Invoice";
 import VerifyPassword from "./pages/ForgetPassword/verifyPassword";
 import DividendAb from "./pages/DividendAb/DividendAb";
-import Moneyow from "./pages/Moneyowed/moneyow";
+import Moneyow from "./pages/Moneyowed/Moneyow";
 import MBO from "./pages/MoneyBusinessOwed/MBO";
 import PersonaltacR from "./pages/PersonaltaxR/PersonaltacR";
 import AdvanceAccounting from "./pages/AdvancedAccount/AdvanceAccounting";
