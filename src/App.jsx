@@ -58,7 +58,7 @@ import Category from "./pages/Category/Category";
 import Invoice from "./pages/Invoice/Invoice";
 import VerifyPassword from "./pages/ForgetPassword/verifyPassword";
 import DividendAb from "./pages/DividendAb/DividendAb";
-// import Moneyow from "./pages/Moneyowed/moneyow";
+import Moneyow from "./pages/Moneyowed/moneyow";
 import MBO from "./pages/MoneyBusinessOwed/MBO";
 import PersonaltacR from "./pages/PersonaltaxR/PersonaltacR";
 import AdvanceAccounting from "./pages/AdvancedAccount/AdvanceAccounting";
@@ -80,7 +80,7 @@ import ClientSignup from "./pages/ClientLogiin/ClientSignup";
 import CheckoutForm from "./pages/Plans/PaymentForm";
 import { loadStripe } from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
-import PricingPlanNew from "./pages/Plans/pricingPlanNew";
+import PricingPlanNew from "./pages/Plans/PricingPlanNew";
 function App() {
   const stripePromise = loadStripe("pk_test_6pRNASCoBOKtIshFeQd4XMUh");
   const options = {
@@ -169,7 +169,7 @@ function App() {
             <Route path='/category' element={<ProtectedRoute children={<Category/>} />} />
             <Route path='/invoices' element={<ProtectedRoute children={<Invoice/>} />} />
             <Route path='/dividend-ab' element={<ProtectedRoute children={<DividendAb/>} />} />
-            {/* <Route path='/money-owed' element={<ProtectedRoute children={<Moneyow />} />} /> */}
+            <Route path='/money-owed' element={<ProtectedRoute children={<Moneyow />} />} />
             <Route path='/money-business-owed' element={<ProtectedRoute children={<MBO />} />} />
             <Route path='/personal-tax' element={<ProtectedRoute children={<PersonaltacR />} />} />
             {/* <Route path='/pricing-plans' element={<ProtectedRoute children={<Pricingplan />} />} /> */}
