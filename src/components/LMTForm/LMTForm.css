@@ -1,0 +1,17 @@
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+.css-1nrlq1o-MuiFormControl-root {
+  width: 100%;
+}
+
+.lmt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.lmt-form .submit-btn {
+  display: flex;
+  justify-content: center;
+}
+.lmt-form .submit-btn button {
+  width: 300px;
+}/*# sourceMappingURL=LMTForm.css.map */

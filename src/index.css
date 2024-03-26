@@ -1,0 +1,1765 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+body {
+  background-color: #f5f6f8;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+body .dashboard-heading {
+  font-size: 22px;
+  font-weight: bold;
+}
+body .main-area {
+  display: flex;
+  height: 100vh;
+}
+body .main-area .sidebar-area {
+  flex: 1.5;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+body .main-area .sidebar-area .sidebar {
+  position: relative;
+}
+body .main-area .sidebar-area .sidebar .top {
+  position: relative;
+  text-align: center;
+}
+body .main-area .sidebar-area .sidebar .top .logo {
+  width: 100%;
+}
+body .main-area .sidebar-area .sidebar .top .logo img {
+  max-width: 100%;
+  width: 80%;
+  padding: 20px 30px;
+}
+body .main-area .sidebar-area .sidebar .center {
+  position: relative;
+  padding-left: 30px;
+  line-height: 2.5;
+}
+body .main-area .sidebar-area .sidebar .center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body .main-area .sidebar-area .sidebar .center ul :hover {
+  color: blue;
+}
+body .main-area .sidebar-area .sidebar .center ul li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  line-height: 45px;
+}
+body .main-area .sidebar-area .sidebar .center ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+body .main-area .sidebar-area .sidebar .center ul li a span {
+  color: #000000;
+  font-size: 15.5px;
+  font-weight: 400;
+}
+body .main-area .sidebar-area .sidebar .center ul li a svg {
+  fill: #84ADEA;
+}
+body .main-area .sidebar-area .sidebar .center ul li .active {
+  position: relative;
+}
+body .main-area .sidebar-area .sidebar .center ul li .active span {
+  color: #635EFF;
+  font-weight: bold;
+}
+body .main-area .sidebar-area .sidebar .center ul li .active svg {
+  fill: #635EFF;
+  width: 25px;
+}
+body .main-area .sidebar-area .sidebar .center ul li .active::before {
+  position: absolute;
+  content: "";
+  left: -15px;
+  width: 7px;
+  height: 38px;
+  border-radius: 10px;
+  background: #635EFF;
+}
+body .main-area .sidebar-area .sidebar .center ul li .list-icon {
+  color: #84adea;
+}
+body .main-area .sidebar-area .sidebar .center ul li .sidebar-img-logo {
+  width: 16%;
+}
+body .main-area .sidebar-area .sidebar .center ul li .sidebar-img-logo-2 {
+  width: 10%;
+}
+body .main-area .sidebar-area .sidebar .center ul li span {
+  margin-left: 20px;
+  color: #000;
+  font-size: 14px;
+}
+body .main-area .dashboardContainer {
+  flex: 7;
+}
+body .main-area .dashboardContainer .top-navbar {
+  position: relative;
+}
+body .main-area .dashboardContainer .top-navbar .navbar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 10px 40px;
+}
+body .main-area .dashboardContainer .top-navbar .right-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-around;
+}
+body .main-area .dashboardContainer .top-navbar .right-section .profile-img {
+  padding: 0 15px 0 30px;
+}
+body .main-area .dashboardContainer .top-navbar .right-section .profile-img img {
+  width: 100%;
+}
+body .main-area .dashboardContainer .top-navbar .right-section .profile-heading {
+  position: relative;
+  padding: 0 30px 0px 0px;
+}
+body .main-area .dashboardContainer .top-navbar .right-section .profile-heading .main-heading {
+  font-size: 14px;
+}
+body .main-area .dashboardContainer .top-navbar .right-section .profile-user-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+body .main-area .dashboardContainer .top-navbar .right-section .profile-user-des {
+  font-size: 15px;
+  font-weight: 400;
+}
+body .main-area .dashboardContainer .content-section {
+  position: relative;
+}
+body .main-area .dashboardContainer .content-section .stats-area {
+  display: flex;
+  margin: auto 3%;
+}
+body .main-area .dashboardContainer .content-section .stats-area .cards {
+  margin-right: 15px;
+  background: white;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+body .main-area .dashboardContainer .content-section .stats-area .cards .card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15.5px;
+  line-height: 0px;
+}
+body .main-area .dashboardContainer .content-section .stats-area .cards img.stat-img {
+  width: 55px;
+}
+body .main-area .dashboardContainer .content-section .stats-area .cards .amount {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 0px;
+}
+body .main-area .dashboardContainer .content-section .stats-area .cards .week-summary {
+  display: flex;
+  align-items: center;
+  line-height: 0px;
+}
+body .main-area .dashboardContainer .content-section .stats-area .cards .week-summary .percent {
+  display: flex;
+  align-items: center;
+  color: #35BE5E;
+  font-size: 15.5px;
+  font-weight: 500;
+}
+body .main-area .dashboardContainer .content-section .stats-area .cards .week-summary .summery-days {
+  color: #b5b5b5;
+  padding-left: 15px;
+  font-size: 15.5px;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start {
+  position: relative;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner {
+  background: white;
+  margin: 1.5% 4% 1.5% 3%;
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner .sc-heading {
+  font-weight: bold;
+  font-size: 16px;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner .sc-heading p {
+  margin: 0;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner .sci-cards {
+  position: relative;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner .sci-cards .sci-area {
+  display: flex;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner .sci-cards .sci-area .sci-start {
+  width: 100%;
+  display: flex;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner .sci-cards .sci-area .sci-start .sci-icon {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner .sci-cards .sci-area .sci-start .sci-icon .shortcut-icon {
+  width: 55px;
+}
+body .main-area .dashboardContainer .content-section .shortcut-start .shortcut-inner .sci-cards .sci-area .sci-start .sci-icon .sci-text {
+  padding-left: 20px;
+  font-size: 15.5px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start {
+  position: relative;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner {
+  background: white;
+  margin: 0% 4% 0% 3%;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .reminder-top {
+  display: flex;
+  justify-content: space-between;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .reminder-top .ri-heading {
+  font-weight: bold;
+  font-size: 15.5px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .reminder-top .ri-heading p {
+  margin: 0;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .reminder-top .ri-dates {
+  display: flex;
+  align-items: center;
+  background: #f5f6f8;
+  padding: 0px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .reminder-top .ri-dates p {
+  margin: 0;
+  padding: 10px;
+  font-size: 13.5px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .reminder-top .ri-dates .ri-dropdown-arrow {
+  font-size: 20px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list {
+  position: relative;
+  margin: 15px 0px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list .risl-start {
+  display: flex;
+  margin: 0px 0px 12px 0px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list .risl-start .risl-img img {
+  width: 50%;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list .risl-start .risl-brand {
+  position: relative;
+  padding-left: 40px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list .risl-start .risl-brand p {
+  margin: 0;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list .risl-start .risl-brand .risl-invoice-quote {
+  font-weight: bold;
+  font-size: 15.5px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list .risl-start .risl-brand p {
+  font-size: 13.5px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list .risl-start .risl-states {
+  position: absolute;
+  right: 0;
+  background: #dcf8e4;
+  line-height: 0;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+body .main-area .dashboardContainer .content-section .reminders-start .reminder-inner .ri-stats-list .risl-start .risl-states p {
+  font-size: 13.5px;
+}
+body .transaction-content {
+  position: relative;
+}
+body .transaction-content .tc-inner {
+  position: relative;
+}
+body .transaction-content .tc-inner .tc-inner-area {
+  display: flex;
+  margin: 40px;
+  background: white;
+  padding: 40px 40px 20px 40px;
+  border-radius: 13px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left {
+  width: 50%;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner {
+  position: relative;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading {
+  position: relative;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .top-heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0px 0px 10px 0px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .tcial-inner-section {
+  position: relative;
+  display: flex;
+  padding: 10px 0px 0px 0px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .tcial-inner-section .tcialis-area-img {
+  position: relative;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .tcial-inner-section .tcialis-area-img img {
+  max-width: 100%;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .tcial-inner-section .tcialis-area-text {
+  padding: 0 20px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .tcial-inner-section .tcialis-area-text .tcialista-th {
+  font-size: 15.5px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 3px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .tcial-inner-section .tcialis-area-text .tcialista-des {
+  font-size: 13px;
+  margin: 0;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .button-connect {
+  position: relative;
+  width: 100%;
+  margin: 3%;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .button-connect .add-connect {
+  width: 80%;
+  padding: 15px 10px;
+  border: none;
+  background: #635eff;
+  color: white;
+  cursor: pointer;
+  font-size: 15.5px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .button-connect .add-connect span {
+  font-size: 20px;
+  padding: 10px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .transaction-end-para {
+  position: relative;
+  padding: 5px 0px 0px 15px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .transaction-end-para .tep {
+  font-size: 15.5px;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-left .tcial-inner .tcial-top-heading .transaction-end-para .tep .trans-indicator {
+  color: #635eff;
+  cursor: pointer;
+  font-weight: bold;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-right {
+  width: 50%;
+  text-align: right;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-right .tcia-img {
+  position: relative;
+}
+body .transaction-content .tc-inner .tc-inner-area .tcia-right .tcia-img img {
+  max-width: 70%;
+}
+body .manage-connection-section {
+  position: relative;
+}
+body .manage-connection-section .mc-area {
+  position: relative;
+}
+body .manage-connection-section .mc-area .mca-inner {
+  position: relative;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% 20% 0% 3%;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 13px;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left {
+  display: flex;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-img {
+  padding: 15px 0px;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-img img {
+  max-width: 75%;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-text {
+  position: relative;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-text .mcai-top-text-area {
+  display: flex;
+  align-items: center;
+  padding: 0 7%;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-text .mcai-top-text-area .mcai-top-th {
+  font-size: 14px;
+  font-weight: bold;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-text .mcai-top-text-area .mcai-top-danger {
+  margin-left: 10%;
+  color: #ff0000;
+  background: #ffd8d8;
+  padding: 0 20px;
+  border-radius: 100px;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-text .mcai-top-text-area-2 {
+  display: flex;
+  align-items: center;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-text .mcai-top-text-area-2 .mcai-top-th-2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-text .mcai-top-text-area-2 .mcai-top-danger-2 {
+  margin-left: 10%;
+  color: #ff0000;
+  background: #ffd8d8;
+  padding: 0 20px;
+  border-radius: 100px;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-text .mcai-top-des {
+  width: 75%;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-left .mcai-top-des-main {
+  margin: auto 7%;
+  width: 75%;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-right {
+  position: relative;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-right .mcair-inner {
+  background: #e9f1fe;
+  color: black;
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .manage-connection-section .mc-area .mca-inner .mcai-top .mcai-right .mcair-inner img {
+  width: 50%;
+  height: 50%;
+  padding-right: 12px;
+}
+body .expenses-section,
+body .purchases-section {
+  position: relative;
+}
+body .expenses-section .es-area,
+body .expenses-section .purchases-area,
+body .purchases-section .es-area,
+body .purchases-section .purchases-area {
+  position: relative;
+  margin: 0 30% 0 3%;
+  background: white;
+  border-radius: 10px;
+}
+body .expenses-section .es-area .p-tabview-nav-container,
+body .expenses-section .purchases-area .p-tabview-nav-container,
+body .purchases-section .es-area .p-tabview-nav-container,
+body .purchases-section .purchases-area .p-tabview-nav-container {
+  padding: 0 20px;
+}
+body .expenses-section .es-area .es-inner,
+body .expenses-section .es-area .purchases-inner,
+body .expenses-section .purchases-area .es-inner,
+body .expenses-section .purchases-area .purchases-inner,
+body .purchases-section .es-area .es-inner,
+body .purchases-section .es-area .purchases-inner,
+body .purchases-section .purchases-area .es-inner,
+body .purchases-section .purchases-area .purchases-inner {
+  position: relative;
+  background: white;
+  border-radius: 13px;
+}
+body .expenses-section .es-area .es-inner .esi-top,
+body .expenses-section .es-area .purchases-inner .esi-top,
+body .expenses-section .purchases-area .es-inner .esi-top,
+body .expenses-section .purchases-area .purchases-inner .esi-top,
+body .purchases-section .es-area .es-inner .esi-top,
+body .purchases-section .es-area .purchases-inner .esi-top,
+body .purchases-section .purchases-area .es-inner .esi-top,
+body .purchases-section .purchases-area .purchases-inner .esi-top {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+}
+body .expenses-section .es-area .es-inner .esi-top img,
+body .expenses-section .es-area .purchases-inner .esi-top img,
+body .expenses-section .purchases-area .es-inner .esi-top img,
+body .expenses-section .purchases-area .purchases-inner .esi-top img,
+body .purchases-section .es-area .es-inner .esi-top img,
+body .purchases-section .es-area .purchases-inner .esi-top img,
+body .purchases-section .purchases-area .es-inner .esi-top img,
+body .purchases-section .purchases-area .purchases-inner .esi-top img {
+  width: 54px;
+  height: 54px;
+}
+body .expenses-section .es-area .es-inner .esi-top .esit-heading,
+body .expenses-section .es-area .purchases-inner .esi-top .esit-heading,
+body .expenses-section .purchases-area .es-inner .esi-top .esit-heading,
+body .expenses-section .purchases-area .purchases-inner .esi-top .esit-heading,
+body .purchases-section .es-area .es-inner .esi-top .esit-heading,
+body .purchases-section .es-area .purchases-inner .esi-top .esit-heading,
+body .purchases-section .purchases-area .es-inner .esi-top .esit-heading,
+body .purchases-section .purchases-area .purchases-inner .esi-top .esit-heading {
+  font-size: 15.5px;
+  font-weight: bold;
+  padding-left: 15px;
+  cursor: pointer;
+}
+body .expenses-section .es-area .es-inner .esi-content,
+body .expenses-section .es-area .purchases-inner .esi-content,
+body .expenses-section .purchases-area .es-inner .esi-content,
+body .expenses-section .purchases-area .purchases-inner .esi-content,
+body .purchases-section .es-area .es-inner .esi-content,
+body .purchases-section .es-area .purchases-inner .esi-content,
+body .purchases-section .purchases-area .es-inner .esi-content,
+body .purchases-section .purchases-area .purchases-inner .esi-content {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+body .expenses-section .es-area .es-inner .esi-content img,
+body .expenses-section .es-area .purchases-inner .esi-content img,
+body .expenses-section .purchases-area .es-inner .esi-content img,
+body .expenses-section .purchases-area .purchases-inner .esi-content img,
+body .purchases-section .es-area .es-inner .esi-content img,
+body .purchases-section .es-area .purchases-inner .esi-content img,
+body .purchases-section .purchases-area .es-inner .esi-content img,
+body .purchases-section .purchases-area .purchases-inner .esi-content img {
+  width: 54px;
+  height: 54px;
+}
+body .expenses-section .es-area .es-inner .esi-content .esic-inner,
+body .expenses-section .es-area .purchases-inner .esi-content .esic-inner,
+body .expenses-section .purchases-area .es-inner .esi-content .esic-inner,
+body .expenses-section .purchases-area .purchases-inner .esi-content .esic-inner,
+body .purchases-section .es-area .es-inner .esi-content .esic-inner,
+body .purchases-section .es-area .purchases-inner .esi-content .esic-inner,
+body .purchases-section .purchases-area .es-inner .esi-content .esic-inner,
+body .purchases-section .purchases-area .purchases-inner .esi-content .esic-inner {
+  display: flex;
+}
+body .expenses-section .es-area .es-inner .esi-content .esic-inner .esic-heading,
+body .expenses-section .es-area .purchases-inner .esi-content .esic-inner .esic-heading,
+body .expenses-section .purchases-area .es-inner .esi-content .esic-inner .esic-heading,
+body .expenses-section .purchases-area .purchases-inner .esi-content .esic-inner .esic-heading,
+body .purchases-section .es-area .es-inner .esi-content .esic-inner .esic-heading,
+body .purchases-section .es-area .purchases-inner .esi-content .esic-inner .esic-heading,
+body .purchases-section .purchases-area .es-inner .esi-content .esic-inner .esic-heading,
+body .purchases-section .purchases-area .purchases-inner .esi-content .esic-inner .esic-heading {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+body .expenses-section .es-area .es-inner .esi-content .esic-inner .esic-heading .esich-para,
+body .expenses-section .es-area .purchases-inner .esi-content .esic-inner .esic-heading .esich-para,
+body .expenses-section .purchases-area .es-inner .esi-content .esic-inner .esic-heading .esich-para,
+body .expenses-section .purchases-area .purchases-inner .esi-content .esic-inner .esic-heading .esich-para,
+body .purchases-section .es-area .es-inner .esi-content .esic-inner .esic-heading .esich-para,
+body .purchases-section .es-area .purchases-inner .esi-content .esic-inner .esic-heading .esich-para,
+body .purchases-section .purchases-area .es-inner .esi-content .esic-inner .esic-heading .esich-para,
+body .purchases-section .purchases-area .purchases-inner .esi-content .esic-inner .esic-heading .esich-para {
+  font-weight: 400;
+}
+body .expenses-section .es-area .es-inner .esi-content .esic-inner .esic-price,
+body .expenses-section .es-area .purchases-inner .esi-content .esic-inner .esic-price,
+body .expenses-section .purchases-area .es-inner .esi-content .esic-inner .esic-price,
+body .expenses-section .purchases-area .purchases-inner .esi-content .esic-inner .esic-price,
+body .purchases-section .es-area .es-inner .esi-content .esic-inner .esic-price,
+body .purchases-section .es-area .purchases-inner .esi-content .esic-inner .esic-price,
+body .purchases-section .purchases-area .es-inner .esi-content .esic-inner .esic-price,
+body .purchases-section .purchases-area .purchases-inner .esi-content .esic-inner .esic-price {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 15px;
+  position: absolute;
+  right: 15%;
+}
+body .expenses-section .es-area .es-inner .esi-content .esic-inner .esic-price .esicp-para,
+body .expenses-section .es-area .purchases-inner .esi-content .esic-inner .esic-price .esicp-para,
+body .expenses-section .purchases-area .es-inner .esi-content .esic-inner .esic-price .esicp-para,
+body .expenses-section .purchases-area .purchases-inner .esi-content .esic-inner .esic-price .esicp-para,
+body .purchases-section .es-area .es-inner .esi-content .esic-inner .esic-price .esicp-para,
+body .purchases-section .es-area .purchases-inner .esi-content .esic-inner .esic-price .esicp-para,
+body .purchases-section .purchases-area .es-inner .esi-content .esic-inner .esic-price .esicp-para,
+body .purchases-section .purchases-area .purchases-inner .esi-content .esic-inner .esic-price .esicp-para {
+  font-weight: 400;
+}
+body .pocketExpense-form {
+  position: relative;
+}
+body .pocketExpense-form .pef-inner {
+  position: relative;
+  background: white;
+  margin: auto 3%;
+  padding: 30px 20px;
+  border-radius: 13px;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main {
+  display: flex;
+  justify-content: space-between;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main .pefi-area {
+  position: relative;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main .pefi-area label {
+  font-size: 14px;
+  font-weight: 700;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main .pefi-area .numberOfDays {
+  width: 305px;
+  height: 41px;
+  margin: 10px auto;
+  background: #f5f6f8;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 6px;
+  padding-left: 15px;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main .pefi-area input {
+  width: 305px;
+  height: 41px;
+  margin: 10px auto;
+  background: #f5f6f8;
+  border: none;
+  border-radius: 6px;
+  padding-left: 15px;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main .pefi-area .inner-field {
+  display: flex;
+  align-items: center;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main .pefi-area .inner-field .currency {
+  padding: 8px 12px;
+  height: 35px;
+  margin: 10px 10px;
+  background: #f5f6f8;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main-2 {
+  display: flex;
+  width: 100%;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main-2 .pefi-area {
+  position: relative;
+  width: 50%;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main-2 .pefi-area label {
+  font-size: 14px;
+  font-weight: 700;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main-2 .pefi-area .numberOfDays {
+  width: 95%;
+  height: 41px;
+  margin: 10px auto;
+  background: #f5f6f8;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 6px;
+  padding-left: 15px;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main-2 .pefi-area .currencyForClient {
+  width: 100%;
+  height: 41px;
+  margin: 10px auto;
+  background: #f5f6f8;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 6px;
+  padding-left: 15px;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main-2 .pefi-area input {
+  width: 305px;
+  height: 41px;
+  margin: 10px auto;
+  background: #f5f6f8;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 6px;
+  padding-left: 15px;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main-2 .pefi-area .inner-field {
+  display: flex;
+  align-items: center;
+}
+body .pocketExpense-form .pef-inner .pefi-area-main-2 .pefi-area .inner-field .currency {
+  padding: 8px 12px;
+  height: 35px;
+  margin: 10px 10px;
+  background: #f5f6f8;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+}
+body .pocketExpense-form .pef-inner .form-center {
+  position: relative;
+}
+body .pocketExpense-form .pef-inner .form-center .fc-inner-section {
+  position: relative;
+}
+body .pocketExpense-form .pef-inner .form-center .fc-inner-section .fcis-start {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+body .pocketExpense-form .pef-inner .form-center .fc-inner-section .fcis-start .fcis-inner {
+  display: flex;
+  align-items: center;
+  background: #f5f6f8;
+  width: 306px;
+  height: 100px;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+body .pocketExpense-form .pef-inner .form-center .fc-inner-section .fcis-start .fcis-inner img {
+  width: 62px;
+  height: 61px;
+}
+body .pocketExpense-form .pef-inner .form-center .fc-inner-section .fcis-start .fcis-inner .uncat-heading-line {
+  padding: 18px 85px;
+}
+body .pocketExpense-form .pef-inner .form-center .fc-inner-section .fcis-inner-2 {
+  background: #f5f6f8;
+  width: 325px;
+  margin-right: 4%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+body .pocketExpense-form .pef-inner .form-center .fc-inner-section .fcis-inner-2 .fcis-text {
+  position: relative;
+}
+body .pocketExpense-form .pef-inner .form-center .fc-inner-section .fcis-inner-2 .fcis-text .uncat-heading-line {
+  padding: 18px 75px;
+}
+body .pocketExpense-form .pef-inner .vat-rate {
+  position: relative;
+}
+body .pocketExpense-form .pef-inner .vat-rate .vr-para {
+  font-size: 14px;
+  font-weight: 600;
+}
+body .pocketExpense-form .pef-inner .radio-row {
+  flex-direction: column;
+  gap: 10px;
+}
+body .pocketExpense-form .pef-inner .radio-row input[type=radio] {
+  accent-color: gray !important;
+}
+body .pocketExpense-form .pef-inner .radio-row .radio-row-up {
+  display: flex;
+  justify-content: space-between;
+}
+body .pocketExpense-form .pef-inner .radio-row .radio-row-down {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+body .pocketExpense-form .pef-inner .radio-rows {
+  position: relative;
+}
+body .pocketExpense-form .pef-inner .radio-rows label {
+  margin-right: 50px;
+}
+body .pocketExpense-form .pef-inner .radio-rows input[type=radio] {
+  accent-color: gray !important;
+}
+body .pocketExpense-form .pef-inner .radio-row-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 29%;
+  margin: 20px 0px;
+}
+body .pocketExpense-form .pef-inner .radio-row-2 input[type=radio] {
+  accent-color: gray !important;
+}
+body .pocketExpense-form .pef-inner .form-button {
+  position: relative;
+  margin: 40px 0px 0px 0px;
+}
+body .pocketExpense-form .pef-inner .form-button .btn-save {
+  width: 335px;
+  height: 42px;
+  background: #635eff;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body .pocketExpense-form .pef-inner .form-button .btn-delete {
+  width: 335px;
+  height: 42px;
+  background: #ff685e;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+body .dividend-area {
+  position: relative;
+}
+body .dividend-area .da-start {
+  position: relative;
+}
+body .dividend-area .da-start .da-inner {
+  background: white;
+  margin: 0px 400px 0px 40px;
+  border-radius: 13px;
+}
+body .dividend-area .da-start .da-inner .dai-top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+  padding: 20px 0px;
+  margin: auto 6% 0% 5%;
+}
+body .dividend-area .da-start .da-inner .dai-top img {
+  width: 54px;
+  height: 54px;
+}
+body .dividend-area .da-start .da-inner .dai-top .dait-heading {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 25px;
+}
+body .dividend-area .da-start .da-inner .dai-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 40px 0px 40px;
+  padding-bottom: 50px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-dividend {
+  background: #f5f6f8;
+  display: flex;
+  border-radius: 13px;
+  width: 50%;
+  margin-right: 1%;
+  padding: 10px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-dividend img {
+  width: 96px;
+  height: 96px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-dividend .daicd-inner {
+  padding-left: 15px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-dividend .daicd-inner .divid-text {
+  font-size: 15.5px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-dividend .daicd-inner .divid-price {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-tax-to-set {
+  background: #f5f6f8;
+  display: flex;
+  border-radius: 13px;
+  width: 50%;
+  margin-left: 20px;
+  padding: 10px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-tax-to-set img {
+  width: 96px;
+  height: 96px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-tax-to-set .daicd-inner {
+  padding-left: 15px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-tax-to-set .daicd-inner .divid-text {
+  font-size: 15.5px;
+}
+body .dividend-area .da-start .da-inner .dai-content .daic-tax-to-set .daicd-inner .divid-price {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+body .dividend-payment-area {
+  position: relative;
+}
+body .dividend-payment-area .dap-start {
+  position: relative;
+}
+body .dividend-payment-area .dap-start .dap-inner {
+  background: white;
+  margin: 0px 400px 0px 40px;
+  border-radius: 13px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 120px 0px 40px;
+  padding-bottom: 15px;
+  padding-top: 30px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-dividend {
+  background: #f5f6f8;
+  display: flex;
+  height: 107px;
+  border-radius: 13px;
+  padding: 10px;
+  width: 50%;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-dividend img {
+  width: 96px;
+  height: 96px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-dividend .daicdp-inner {
+  padding-left: 15px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-dividend .daicdp-inner .dividp-text {
+  font-size: 14px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-dividend .daicdp-inner .dividp-price {
+  font-size: 25px;
+  font-weight: bold;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-tax-to-set {
+  background: #f5f6f8;
+  display: flex;
+  height: 107px;
+  border-radius: 13px;
+  padding: 10px;
+  width: 50%;
+  margin-left: 20px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-tax-to-set img {
+  width: 96px;
+  height: 96px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-tax-to-set .daicdp-inner {
+  padding-left: 15px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-tax-to-set .daicdp-inner .dividp-text {
+  font-size: 14px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daip-content .daicp-tax-to-set .daicdp-inner .dividp-price {
+  font-size: 25px;
+  font-weight: bold;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner {
+  position: relative;
+  padding-left: 50px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipci-start {
+  position: relative;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipci-start .daipcis-text {
+  font-size: 14px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipc-inner-tab {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 100px 0px 0px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipc-inner-tab .daipcit-input {
+  position: relative;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipc-inner-tab .daipcit-input input {
+  width: 305px;
+  height: 42px;
+  border-radius: 6px;
+  background: #f5f6f8;
+  border: none;
+  padding-left: 20px;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipc-inner-tab .daipcit-allocate {
+  position: relative;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipc-inner-tab .daipcit-allocate .allocated-available-btn {
+  width: 144px;
+  height: 42px;
+  background-color: #53da7b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipc-inner-tab .daipcit-allocate-next {
+  position: relative;
+}
+body .dividend-payment-area .dap-start .dap-inner .daipc-inner .daipc-inner-tab .daipcit-allocate-next .allocated-next-btn {
+  width: 189px;
+  height: 42px;
+  background-color: #635eff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area {
+  position: relative;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca {
+  position: relative;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca .dpcai {
+  background: #f5f6f8;
+  margin: 0px 100px 0px 50px;
+  border-radius: 6px;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca .dpcai .dpcai-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca .dpcai .dpcai-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+  margin: 0px 25px;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca .dpcai .dpcai-total .dpcait-total-para {
+  font-weight: bold;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca .dpcai .dpcai-total .dpcait-total-amount {
+  font-weight: bold;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca-head {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 275px;
+  font-size: 14px;
+  margin: 30px auto;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca-head .dpcah-bold {
+  color: #635eff;
+  font-weight: bold;
+  cursor: pointer;
+}
+body .dividend-payment-area .dap-start .dap-inner .dividend-pay-content-area .dpca-head .dpcah-btn {
+  width: 335px;
+  height: 42px;
+  background-color: #635eff;
+  margin: 20px auto;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+body .add-new-line-category {
+  position: relative;
+}
+body .add-new-line-category .add-new-line {
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 50px;
+  cursor: pointer;
+}
+body .payroll-section {
+  position: relative;
+}
+body .payroll-section .payroll-inner {
+  position: relative;
+}
+body .payroll-section .payroll-inner .payroll-start {
+  display: flex;
+  background: white;
+  margin: 3%;
+  padding: 40px;
+  border-radius: 13px;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area {
+  position: relative;
+  width: 50%;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner {
+  position: relative;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .prla-top-heading {
+  position: relative;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .prla-top-heading .prla-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .prla-content {
+  display: flex;
+  align-items: center;
+  line-height: 50px;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .prla-content img {
+  width: 62px;
+  height: 62px;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .prla-content .prla-para {
+  font-size: 14px;
+  padding-left: 25px;
+  font-weight: 600;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .btn-get-started {
+  background-color: #635eff;
+  color: white;
+  width: 75%;
+  border: none;
+  height: 42px;
+  border-radius: 4px;
+  margin: 4%;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .bottom-line {
+  padding-right: 100px;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .bottom-line .bottomLine-para {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0px 24px;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-left-area .prla-inner .bottom-line .bottomLine-para .bl-bold {
+  color: #635eff;
+  font-weight: bold;
+  cursor: pointer;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-right-area {
+  position: relative;
+  width: 50%;
+}
+body .payroll-section .payroll-inner .payroll-start .pr-right-area img {
+  max-width: 100%;
+  float: right;
+}
+body .refer-friend-section {
+  position: relative;
+}
+body .refer-friend-section .rfs-inner {
+  position: relative;
+}
+body .refer-friend-section .rfs-inner .rfs-start {
+  display: flex;
+  background: white;
+  margin: 3%;
+  padding: 40px;
+  border-radius: 13px;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area {
+  position: relative;
+  width: 60%;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner {
+  position: relative;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-top-heading {
+  position: relative;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-top-heading .rfs-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-content {
+  display: flex;
+  align-items: center;
+  line-height: 25px;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-content img {
+  width: 62px;
+  height: 62px;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-content .rfs-para {
+  font-size: 14px;
+  padding-left: 25px;
+  font-weight: 600;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-link {
+  position: relative;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-link .rfs-para {
+  font-size: 14px;
+  font-weight: bold;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-link .link-fields {
+  background: #f5f6f8;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  border-radius: 4px;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-link .link-fields .link-input {
+  border: none;
+  width: 100%;
+  background: transparent;
+  color: #000000;
+  outline: none;
+  padding-left: 20px;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-link .link-fields .btn-copy-link {
+  width: 20%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 4px;
+  border: none;
+  background: #635eff;
+  color: white;
+  cursor: pointer;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-link .social-icons {
+  position: relative;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-left-area .rfs-inner .rfs-link .social-icons .social-icon-img {
+  max-width: 100%;
+  width: 10%;
+  cursor: pointer;
+  margin: 5px;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-right-area {
+  position: relative;
+  width: 40%;
+}
+body .refer-friend-section .rfs-inner .rfs-start .rfs-right-area img {
+  max-width: 100%;
+  float: right;
+}
+body .taxes-section {
+  position: relative;
+}
+body .taxes-section .taxes-inner {
+  position: relative;
+  background: white;
+  margin: 0 40% 0% 3%;
+  border-radius: 13px;
+}
+body .taxes-section .taxes-inner .taxes-start {
+  padding: 30px;
+}
+body .taxes-section .taxes-inner .taxes-start .p-tabview .p-tabview-panels {
+  padding: 0px;
+}
+body .taxes-section .taxes-inner .taxes-start .p-tabview .p-tabview-panels .btn-taxes-all {
+  width: 69px;
+  height: 39px;
+  margin: 5px;
+  background: #635EFF;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .taxes-section .taxes-inner .taxes-start .p-tabview .p-tabview-panels .btn-taxes-ac {
+  width: 128px;
+  height: 39px;
+  margin: 5px;
+  background: #E9F1FE;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .taxes-section .taxes-inner .taxes-start .p-tabview .p-tabview-panels .btn-taxes-ct {
+  width: 128px;
+  height: 39px;
+  margin: 5px;
+  background: #E9F1FE;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .taxes-section .taxes-inner .taxes-start .p-tabview .p-tabview-panels .btn-taxes-other {
+  width: 69px;
+  height: 39px;
+  margin: 5px;
+  background: #E9F1FE;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .taxes-section .taxes-inner .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: black;
+}
+body .taxes-section .taxes-inner .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+  background-color: unset;
+}
+body .taxes-section .taxes-inner .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  border-color: unset;
+}
+body .taxes-section .taxes-inner .p-tabview .p-tabview-nav {
+  border: none;
+}
+body .taxes-section .taxes-inner .p-tabview-nav-content {
+  border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+}
+body .taxes-section .taxes-inner .p-tabview-title {
+  font-weight: 500;
+}
+body .taxes-section .taxes-inner .uct-para {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+body .taxes-section .taxes-inner .uct-inner-content {
+  position: relative;
+}
+body .taxes-section .taxes-inner .uct-inner-content .uctic-area {
+  position: relative;
+  line-height: 25px;
+}
+body .taxes-section .taxes-inner .uct-inner-content .uctic-area .uctic-content-start {
+  display: flex;
+  align-items: center;
+}
+body .taxes-section .taxes-inner .uct-inner-content .uctic-area .uctic-content-start img {
+  max-width: 100%;
+  width: 10%;
+}
+body .taxes-section .taxes-inner .uct-inner-content .uctic-area .uctic-content-start .uctic-inner-para {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #000;
+}
+body .taxes-section .taxes-inner .uct-inner-content .uctic-area .uctic-content-start .uctic-inner-para span {
+  font-size: 14px;
+  font-weight: bold;
+}
+body .purchases-section {
+  position: relative;
+}
+body .purchases-section .purchases-area {
+  margin: 0 25% 0 3%;
+}
+body .purchases-section .purchases-area .purchases-inner {
+  background: white;
+  border-radius: 7px;
+}
+body .purchases-section .purchases-area .purchases-inner .p-tabview-nav-container {
+  padding: 0 20px;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(217, 217, 217, 0.8);
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-content .purchase-add-icon {
+  width: 8%;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-content .purchases-inner-content {
+  padding-left: 25px;
+  font-weight: bold;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-Overdue-heading {
+  font-weight: bold;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area {
+  display: flex;
+  justify-content: space-between;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area .pga-left {
+  position: relative;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area .pga-left .purchases-content-area {
+  display: flex;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area .pga-left .purchases-content-area img {
+  width: 26%;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area .pga-left .purchases-content-area .purchases-inner-content {
+  line-height: 0.5;
+  padding-left: 20px;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area .pga-left .purchases-content-area .purchases-inner-content p {
+  font-weight: 600;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area .pga-right {
+  position: relative;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area .pga-right .pgar-amount {
+  line-height: 0.5;
+}
+body .purchases-section .purchases-area .purchases-inner .purchases-get-area .pga-right .pgar-amount p {
+  font-weight: 600;
+}
+body .users-page {
+  position: relative;
+  margin: auto 35px;
+}
+body .users-page .top-user-details {
+  position: relative;
+}
+body .users-page .top-user-details .user-details-inner {
+  position: relative;
+}
+body .users-page .top-user-details .user-details-inner .udi-start {
+  display: inline-grid;
+}
+body .users-page .top-user-details .user-details-inner .udi-start .userUploadImg {
+  margin-top: 10px;
+}
+body .users-page .top-user-details .user-details-inner .uid-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+body .users-page .top-user-details .user-details-inner .uid-area .uid-section {
+  display: inline-grid;
+  width: 100%;
+  margin: auto 10px;
+}
+body .users-page .top-user-details .user-details-inner .uid-area .uid-section .ui-field {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgba(217, 217, 217, 0.2509803922);
+  outline: none;
+  padding: 15px;
+  margin-top: 10px;
+}
+body .users-page .btn-user-submit {
+  background-color: #635EFF;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+body .users-page .user-permission {
+  position: relative;
+}
+body .users-page .user-permission .up-inner-section {
+  position: relative;
+}
+body .users-page .user-permission .up-inner-section .upis-start {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1803921569);
+}
+body .users-page .user-permission .up-inner-section .upis-start .radio-rows {
+  margin-left: 20%;
+  display: flex;
+}
+body .users-page .user-permission .up-inner-section .upis-start .radio-rows .user-permission-label {
+  margin: auto 40px;
+}
+body .user-details-page {
+  position: relative;
+  background: white;
+  padding: 10px;
+  margin: auto 3%;
+  border-radius: 10px;
+}
+body .user-details-page .ud-inner-section {
+  position: relative;
+}
+body .user-details-page .ud-inner-section .udi-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .user-details-page .ud-inner-section .udi-area .top-search {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 30%;
+  justify-content: space-between;
+  margin: 2% 3%;
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.0509803922);
+}
+body .user-details-page .ud-inner-section .udi-area .top-search .user-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+body .user-details-page .ud-inner-section .udi-area .btn-user-add {
+  height: 40px;
+  margin-right: 50px;
+  background-color: #635EFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+body .user-details-page .ud-inner-section .user-table-details {
+  position: relative;
+}
+body .user-details-page .ud-inner-section .user-table-details .top-user-details {
+  position: relative;
+}
+body .user-details-page .ud-inner-section .user-table-details .top-user-details .table-head {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 3%;
+  background: #E9F1FE;
+  padding: 0px 20px;
+  border-radius: 6px;
+}
+body .user-details-page .ud-inner-section .user-table-details .top-user-details .table-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 3%;
+  padding: 0px 20px;
+  border-radius: 6px;
+}
+body .user-details-page .ud-inner-section .user-table-details .top-user-details .table-inner img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+body .market-perks-section {
+  position: relative;
+}
+body .market-perks-section .market-perks-area {
+  position: relative;
+  margin: 3% 25% 0% 3%;
+  background: white;
+  padding: 10px 50px;
+  border-radius: 13px;
+}
+body .market-perks-section .market-perks-area .market-perks-inner {
+  position: relative;
+}
+body .market-perks-section .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: black;
+}
+body .market-perks-section .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+  background-color: unset;
+}
+body .market-perks-section .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  border-color: unset;
+}
+body .market-perks-section .p-tabview .p-tabview-nav {
+  border: none;
+}
+body .market-perks-section .p-tabview-nav-content {
+  border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+}
+body .market-perks-section .p-tabview-title {
+  font-weight: 500;
+}
+body .market-perks-section .market-perks-inner {
+  position: relative;
+}
+body .market-perks-section .market-perks-inner .mpic-start {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 13px;
+  align-items: end;
+  padding: 5px 0px;
+  margin: 10px auto;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-left {
+  display: flex;
+  align-items: center;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-left .mpic-top {
+  position: relative;
+  font-size: 14px;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-left .mpic-top .mpict-heading-area {
+  display: flex;
+  width: 85%;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-left .mpic-top .mpict-heading-area .mpict-left {
+  font-weight: bold;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-left .mpic-top .mpict-heading-area .mpict-right {
+  padding-left: 30px;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-left .mpic-top .mpict-bottom {
+  padding: 0px 75px 0px 0px;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-right {
+  text-align: center;
+  width: 230px;
+  font-size: 14px;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-right .mpic-button {
+  position: relative;
+}
+body .market-perks-section .market-perks-inner .mpic-start .mpics-right .mpic-button .btn-claim-offer {
+  background: #635eff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 111px;
+  height: 35px;
+  cursor: pointer;
+}
+body .market-perks-section .perks-section {
+  position: relative;
+}
+body .market-perks-section .perks-section .perks-inner {
+  display: flex;
+  justify-content: space-between;
+}
+body .market-perks-section .perks-section .perks-inner .perks-left {
+  width: 60%;
+  padding-right: 60px;
+  line-height: 24px;
+}
+body .market-perks-section .perks-section .perks-inner .perks-left .perks-top-heading {
+  position: relative;
+}
+body .market-perks-section .perks-section .perks-inner .perks-left .perks-top-heading .pth-area {
+  font-size: 20px;
+  font-weight: bold;
+}
+body .market-perks-section .perks-section .perks-inner .perks-left .perks-content {
+  position: relative;
+}
+body .market-perks-section .perks-section .perks-inner .perks-left .perks-content .perks-para {
+  font-size: 14px;
+}
+body .market-perks-section .perks-section .perks-inner .perks-left .perks-button {
+  position: relative;
+}
+body .market-perks-section .perks-section .perks-inner .perks-left .perks-button .btn-perks {
+  width: 186px;
+  height: 42px;
+  border: none;
+  background: #635EFF;
+  color: white;
+  border-radius: 4px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+body .market-perks-section .perks-section .perks-inner .perks-right {
+  width: 40%;
+}
+body .market-perks-section .perks-section .perks-inner .perks-right .perks-image {
+  width: 100%;
+}
+body .market-perks-section .perks-section .perks-inner .perks-right .perks-image img {
+  max-width: 100%;
+}
+body .logo {
+  mix-blend-mode: multiply;
+}
+body a {
+  text-decoration: none;
+  color: #007BAD;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.MuiFormControl-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: red;
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid #F5F6F8 !important;
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 1px solid #F5F6F8 !important;
+}
+
+.MuiBox-root.css-ece9u5 {
+  width: 20%;
+  background: #F5F6F8;
+  padding: 10px;
+  margin: 2% 0%;
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  box-shadow: unset !important;
+}
+
+input[type=radio] {
+  accent-color: #635EFF;
+}
+
+.css-1ex1afd-MuiTableCell-root {
+  padding: 0;
+}
+
+.react-tabs__tab-list {
+  border-bottom: none !important;
+  padding: 4px;
+  background: #F5F6F8;
+  width: 37.5%;
+  border-radius: 100px !important;
+}
+
+.react-tabs__tab {
+  background-color: #F5F6F8;
+  border-radius: 100px;
+}
+
+.react-tabs__tab--selected {
+  border: none !important;
+  background: #635EFF !important;
+  color: white !important;
+  border-radius: 100px !important;
+}
+
+.top-search-roles {
+  background-color: #E9F1FE;
+}
+.top-search-roles button {
+  height: "40px";
+  background-color: "transparent";
+  border: "none";
+  padding: "0px 12px";
+  cursor: pointer;
+  border-radius: 4px;
+}
+.top-search-roles button:hover {
+  background: #635EFF !important;
+  color: white;
+}
+
+.selected-director {
+  background-color: lightgray; /* Set your desired background color for the selected director */
+}/*# sourceMappingURL=index.css.map */

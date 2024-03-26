@@ -1,0 +1,24 @@
+.plan-table-main {
+  padding: 20px;
+}
+.plan-table-main .plan-table-head {
+  background-color: #635eff;
+}
+.plan-table-main .plan-table-head h3,
+.plan-table-main .plan-table-head p {
+  color: white;
+}
+.plan-table-main td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-sizeMedium.css-1ex1afd-MuiTableCell-root {
+  border-right: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  border-bottom: 0 !important;
+}
+.plan-table-main .css-rqglhn-MuiTable-root {
+  border: 1px solid lightgray;
+}
+.plan-table-main .even-row {
+  background-color: white;
+}
+.plan-table-main .odd-row {
+  background-color: #F7F7FF;
+}/*# sourceMappingURL=PlansTable.css.map */
